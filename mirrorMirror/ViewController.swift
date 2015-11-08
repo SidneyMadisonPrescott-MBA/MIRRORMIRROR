@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -36,6 +37,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Alamofire.request(.GET, "http://ferrerluis.com/images")
+            .responseJSON { (response) in
+                if let JSON = response.result.value {
+                    
+                    print(JSON)
+                }
+        }
         
         stylePage()
 
