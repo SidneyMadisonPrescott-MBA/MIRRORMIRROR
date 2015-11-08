@@ -25,34 +25,55 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1OA-Ro-nWw">
                                 <rect key="frame" x="29" y="131" width="360" height="440"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gos-Sy-ZEH">
-                                        <rect key="frame" x="0.0" y="0.0" width="360" height="363"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-Um-7n4">
+                                        <rect key="frame" x="177" y="363" width="183" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAL-1i-5Kk">
+                                                <rect key="frame" x="2" y="0.0" width="179" height="77"/>
+                                                <animations/>
+                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="60" minY="10" maxX="60" maxY="10"/>
+                                                <state key="normal" image="assets-01.png"/>
+                                                <connections>
+                                                    <action selector="yesAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="RhB-tx-z9o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06N-Kd-ysc">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-1V-dOy">
                                         <rect key="frame" x="0.0" y="363" width="183" height="77"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06N-Kd-ysc">
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="77"/>
+                                                <animations/>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                <inset key="contentEdgeInsets" minX="58" minY="10" maxX="58" maxY="10"/>
+                                                <state key="normal" image="assets-02.png"/>
+                                                <connections>
+                                                    <action selector="noAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="iQl-12-zpJ"/>
+                                                    <action selector="yesAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="Kmn-WW-DEI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <animations/>
-                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                        <inset key="contentEdgeInsets" minX="58" minY="10" maxX="58" maxY="10"/>
-                                        <state key="normal" image="assets-02.png"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
                                                 <color key="value" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAL-1i-5Kk">
-                                        <rect key="frame" x="181" y="363" width="179" height="77"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gos-Sy-ZEH">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="363"/>
                                         <animations/>
-                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="60" minY="10" maxX="60" maxY="10"/>
-                                        <state key="normal" image="assets-01.png"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                <color key="value" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
+                                    </imageView>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -88,7 +109,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="image" destination="Gos-Sy-ZEH" id="hfG-6H-l1z"/>
+                        <outlet property="left" destination="ks2-1V-dOy" id="qRA-60-VQr"/>
                         <outlet property="noArea" destination="06N-Kd-ysc" id="dnH-qv-Qyw"/>
+                        <outlet property="right" destination="Ez2-Um-7n4" id="nOh-pF-jyd"/>
                         <outlet property="yesArea" destination="sAL-1i-5Kk" id="dLg-sy-eRJ"/>
                     </connections>
                 </viewController>
@@ -101,6 +124,5 @@
         <image name="assets-01.png" width="347" height="347"/>
         <image name="assets-02.png" width="405" height="347"/>
         <image name="assets-03.png" width="453" height="453"/>
-        <image name="pic.jpg" width="500" height="500"/>
     </resources>
 </document>
