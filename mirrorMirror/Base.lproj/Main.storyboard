@@ -10,6 +10,7 @@
             <string>MuseoSans-500</string>
             <string>MuseoSans-500</string>
             <string>MuseoSans-500</string>
+            <string>MuseoSans-500</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -22,49 +23,20 @@
                         <viewControllerLayoutGuide type="bottom" id="fqy-5e-nNd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Mff-Xi-9mZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1OA-Ro-nWw">
-                                <rect key="frame" x="29" y="131" width="360" height="440"/>
+                                <rect key="frame" x="35" y="108" width="252" height="308"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-Um-7n4">
-                                        <rect key="frame" x="177" y="363" width="183" height="77"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAL-1i-5Kk">
-                                                <rect key="frame" x="2" y="0.0" width="179" height="77"/>
-                                                <animations/>
-                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <inset key="imageEdgeInsets" minX="60" minY="10" maxX="60" maxY="10"/>
-                                                <state key="normal" image="assets-01.png"/>
-                                                <connections>
-                                                    <action selector="yesAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="RhB-tx-z9o"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn3-OR-HCp">
-                                                <rect key="frame" x="36" y="14" width="111" height="49"/>
-                                                <animations/>
-                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="40"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <animations/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                <color key="value" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ks2-1V-dOy">
-                                        <rect key="frame" x="0.0" y="363" width="183" height="77"/>
+                                        <rect key="frame" x="0.0" y="252" width="130" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06N-Kd-ysc">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="77"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="130" height="56"/>
                                                 <animations/>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                <inset key="contentEdgeInsets" minX="58" minY="10" maxX="58" maxY="10"/>
+                                                <inset key="contentEdgeInsets" minX="40" minY="10" maxX="40" maxY="10"/>
                                                 <state key="normal" image="assets-02.png"/>
                                                 <connections>
                                                     <action selector="noAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="iQl-12-zpJ"/>
@@ -72,9 +44,9 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U7-v2-2hW">
-                                                <rect key="frame" x="36" y="14" width="111" height="49"/>
+                                                <rect key="frame" x="20" y="9" width="90" height="39"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="40"/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="30"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -88,9 +60,38 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gos-Sy-ZEH">
-                                        <rect key="frame" x="0.0" y="0.0" width="360" height="363"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="253"/>
                                         <animations/>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-Um-7n4">
+                                        <rect key="frame" x="127" y="252" width="124" height="56"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAL-1i-5Kk">
+                                                <rect key="frame" x="-3" y="0.0" width="130" height="56"/>
+                                                <animations/>
+                                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="45" minY="10" maxX="45" maxY="10"/>
+                                                <state key="normal" image="assets-01.png"/>
+                                                <connections>
+                                                    <action selector="yesAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="RhB-tx-z9o"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn3-OR-HCp">
+                                                <rect key="frame" x="7" y="3" width="111" height="49"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="30"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -100,16 +101,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSL-pP-V5k">
-                                <rect key="frame" x="162" y="618" width="90" height="90"/>
-                                <animations/>
-                                <state key="normal" image="assets-03.png"/>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TRk-kh-ulr">
-                                <rect key="frame" x="0.0" y="20" width="414" height="54"/>
+                                <rect key="frame" x="0.0" y="20" width="322" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Styles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMt-kQ-0ko">
-                                        <rect key="frame" x="104" y="4" width="207" height="46"/>
+                                        <rect key="frame" x="75" y="2" width="173" height="38"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -120,12 +116,20 @@
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.70588235290000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There are no more styles available at this moment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gco-Hi-pDe">
-                                <rect key="frame" x="39" y="137" width="340" height="356"/>
+                                <rect key="frame" x="45" y="113" width="236" height="247"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="38"/>
+                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="28"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSL-pP-V5k">
+                                <rect key="frame" x="120" y="467" width="81" height="81"/>
+                                <animations/>
+                                <state key="normal" image="assets-03.png"/>
+                                <connections>
+                                    <segue destination="1NF-DP-4X8" kind="show" id="1O8-IR-QXX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.96760817310000002" green="0.96760817310000002" blue="0.96760817310000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,7 +138,7 @@
                             <outletCollection property="gestureRecognizers" destination="8u0-pk-Mha" appends="YES" id="kpA-KX-yLP"/>
                         </connections>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="container" destination="1OA-Ro-nWw" id="8ya-bM-iRg"/>
                         <outlet property="image" destination="Gos-Sy-ZEH" id="hfG-6H-l1z"/>
@@ -156,10 +160,85 @@
             </objects>
             <point key="canvasLocation" x="440" y="349"/>
         </scene>
+        <!--Cam Controller-->
+        <scene sceneID="cMH-en-ay0">
+            <objects>
+                <viewController id="1NF-DP-4X8" customClass="CamController" customModule="mirrorMirror" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L1D-x6-qkY"/>
+                        <viewControllerLayoutGuide type="bottom" id="n9b-YT-zAX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="neD-HF-nrK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-tR-oIr">
+                                <rect key="frame" x="0.0" y="20" width="320" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Snap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-tT-tpF">
+                                        <rect key="frame" x="57" y="4" width="207" height="46"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="28"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2b-UK-5sm">
+                                        <rect key="frame" x="13" y="14" width="25" height="25"/>
+                                        <animations/>
+                                        <state key="normal" image="Back-25.png"/>
+                                        <connections>
+                                            <segue destination="MUI-NL-UfL" kind="show" id="xyl-bR-I3b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USe-F5-JM9">
+                                        <rect key="frame" x="282" y="14" width="25" height="25"/>
+                                        <animations/>
+                                        <state key="normal" image="Checkmark Filled-25.png"/>
+                                        <connections>
+                                            <action selector="acceptPicture:" destination="1NF-DP-4X8" eventType="touchUpInside" id="oMb-eU-SHY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.70588235290000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="enE-1G-ziX">
+                                <rect key="frame" x="0.0" y="71" width="320" height="417"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3b-AD-DQY">
+                                <rect key="frame" x="-1" y="486" width="321" height="82"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.70588235290000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="120" minY="0.0" maxX="120" maxY="0.0"/>
+                                <state key="normal" image="assets-03.png"/>
+                                <connections>
+                                    <action selector="photobutton:" destination="1NF-DP-4X8" eventType="touchUpInside" id="9Vb-An-0jc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageview" destination="enE-1G-ziX" id="QjR-ER-zhx"/>
+                        <segue destination="MUI-NL-UfL" kind="show" identifier="photoSelected" id="4ek-cG-aqY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="neM-iq-cnh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="863" y="349"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Back-25.png" width="25" height="25"/>
+        <image name="Checkmark Filled-25.png" width="25" height="25"/>
         <image name="assets-01.png" width="347" height="347"/>
         <image name="assets-02.png" width="405" height="347"/>
         <image name="assets-03.png" width="453" height="453"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="4ek-cG-aqY"/>
+    </inferredMetricsTieBreakers>
 </document>

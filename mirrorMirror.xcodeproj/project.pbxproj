@@ -24,6 +24,9 @@
 		A01736EE1BEF578F005B7D37 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A01736E01BEF574D005B7D37 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A017373A1BEF6043005B7D37 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A017372D1BEF6027005B7D37 /* SwiftyJSON.framework */; };
 		A017373B1BEF6043005B7D37 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A017372D1BEF6027005B7D37 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A017373F1BEF8B3C005B7D37 /* CamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A017373E1BEF8B3C005B7D37 /* CamController.swift */; settings = {ASSET_TAGS = (); }; };
+		A01737411BEF9643005B7D37 /* Back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = A01737401BEF9643005B7D37 /* Back-25.png */; settings = {ASSET_TAGS = (); }; };
+		A01737431BEF964E005B7D37 /* Checkmark Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = A01737421BEF964E005B7D37 /* Checkmark Filled-25.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -192,6 +195,9 @@
 		A01736CE1BEF5128005B7D37 /* pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pic.jpg; sourceTree = "<group>"; };
 		A01736D51BEF574D005B7D37 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		A01737221BEF6027005B7D37 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		A017373E1BEF8B3C005B7D37 /* CamController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CamController.swift; sourceTree = "<group>"; };
+		A01737401BEF9643005B7D37 /* Back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back-25.png"; path = "../../../../Downloads/Back-25.png"; sourceTree = "<group>"; };
+		A01737421BEF964E005B7D37 /* Checkmark Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Checkmark Filled-25.png"; path = "../../../../Downloads/Checkmark Filled-25.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +257,7 @@
 				A01736791BEF4B1B005B7D37 /* AppDelegate.swift */,
 				A017367B1BEF4B1B005B7D37 /* ViewController.swift */,
 				A017367D1BEF4B1B005B7D37 /* Main.storyboard */,
+				A017373E1BEF8B3C005B7D37 /* CamController.swift */,
 				A01736801BEF4B1B005B7D37 /* Assets.xcassets */,
 				A01736821BEF4B1B005B7D37 /* LaunchScreen.storyboard */,
 				A01736851BEF4B1B005B7D37 /* Info.plist */,
@@ -287,6 +294,8 @@
 		A01736C91BEF5128005B7D37 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A01737421BEF964E005B7D37 /* Checkmark Filled-25.png */,
+				A01737401BEF9643005B7D37 /* Back-25.png */,
 				A01736CA1BEF5128005B7D37 /* assets-01.png */,
 				A01736CB1BEF5128005B7D37 /* assets-02.png */,
 				A01736CC1BEF5128005B7D37 /* assets-03.png */,
@@ -545,8 +554,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01736D01BEF5128005B7D37 /* assets-02.png in Resources */,
+				A01737411BEF9643005B7D37 /* Back-25.png in Resources */,
 				A01736D31BEF5128005B7D37 /* pic.jpg in Resources */,
 				A01736C81BEF5122005B7D37 /* Museo Sans 500.otf in Resources */,
+				A01737431BEF964E005B7D37 /* Checkmark Filled-25.png in Resources */,
 				A01736841BEF4B1B005B7D37 /* LaunchScreen.storyboard in Resources */,
 				A01736811BEF4B1B005B7D37 /* Assets.xcassets in Resources */,
 				A01736D21BEF5128005B7D37 /* assets.ai in Resources */,
@@ -579,6 +590,7 @@
 			files = (
 				A017367C1BEF4B1B005B7D37 /* ViewController.swift in Sources */,
 				A017367A1BEF4B1B005B7D37 /* AppDelegate.swift in Sources */,
+				A017373F1BEF8B3C005B7D37 /* CamController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
