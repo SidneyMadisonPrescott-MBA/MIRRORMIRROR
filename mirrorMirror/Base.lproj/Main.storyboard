@@ -7,6 +7,9 @@
     <customFonts key="customFonts">
         <mutableArray key="Museo Sans 500.otf">
             <string>MuseoSans-500</string>
+            <string>MuseoSans-500</string>
+            <string>MuseoSans-500</string>
+            <string>MuseoSans-500</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -38,6 +41,13 @@
                                                     <action selector="yesAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="RhB-tx-z9o"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sn3-OR-HCp">
+                                                <rect key="frame" x="36" y="14" width="111" height="49"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="40"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,6 +71,13 @@
                                                     <action selector="yesAction:" destination="MUI-NL-UfL" eventType="touchUpInside" id="Kmn-WW-DEI"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0U7-v2-2hW">
+                                                <rect key="frame" x="36" y="14" width="111" height="49"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="40"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -102,20 +119,40 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.70588235290000001" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There are no more styles available at this moment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gco-Hi-pDe">
+                                <rect key="frame" x="39" y="137" width="340" height="356"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="MuseoSans-500" family="Museo Sans" pointSize="38"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.96760817310000002" green="0.96760817310000002" blue="0.96760817310000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="8u0-pk-Mha" appends="YES" id="kpA-KX-yLP"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="container" destination="1OA-Ro-nWw" id="8ya-bM-iRg"/>
                         <outlet property="image" destination="Gos-Sy-ZEH" id="hfG-6H-l1z"/>
                         <outlet property="left" destination="ks2-1V-dOy" id="qRA-60-VQr"/>
                         <outlet property="noArea" destination="06N-Kd-ysc" id="dnH-qv-Qyw"/>
+                        <outlet property="noLabel" destination="0U7-v2-2hW" id="gnp-ci-Ilh"/>
                         <outlet property="right" destination="Ez2-Um-7n4" id="nOh-pF-jyd"/>
+                        <outlet property="warning" destination="gco-Hi-pDe" id="c4n-ep-9u5"/>
                         <outlet property="yesArea" destination="sAL-1i-5Kk" id="dLg-sy-eRJ"/>
+                        <outlet property="yesLabel" destination="Sn3-OR-HCp" id="Xcm-2o-ZF3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O9W-6q-bCa" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="8u0-pk-Mha">
+                    <connections>
+                        <action selector="swipeUp:" destination="MUI-NL-UfL" id="zGm-ir-Jr1"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="440" y="349"/>
         </scene>

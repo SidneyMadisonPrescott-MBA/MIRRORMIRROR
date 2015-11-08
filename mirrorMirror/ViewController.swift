@@ -9,16 +9,30 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
+//
 var feed: [JSON] = [JSON]()
-
+//
 class ViewController: UIViewController {
-
+//
     @IBOutlet weak var left: UIView!
     @IBOutlet weak var right: UIView!
     @IBOutlet weak var yesArea: UIButton!
     @IBOutlet weak var noArea: UIButton!
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var noLabel: UILabel!
+    @IBOutlet weak var yesLabel: UILabel!
+    @IBOutlet weak var container: UIView!
+    @IBOutlet weak var warning: UILabel!
+    
+    func updateLabels() {
+        
+        noArea.hidden = true
+        yesArea.hidden = true
+        noLabel.hidden = false
+        noLabel.text = String(feed[0]["no"].intValue)
+        yesLabel.hidden = false
+        yesLabel.text = String(feed[0]["yes"].intValue)
+    }
     
     func updatePicture() {
         
@@ -32,45 +46,70 @@ class ViewController: UIViewController {
                 
                 image.image = UIImage(data: decodedData)
             }
+            
+            
+        } else {
+            
+            container.hidden = true
+            warning.hidden = false
+        }
+    }
+    
+    @IBAction func swipeUp(sender: AnyObject) {
+        
+        if yesArea.hidden && noArea.hidden {
+            
+            if feed.count == 0 {
+                
+                container.hidden = true
+                warning.hidden = false
+                
+                return
+            }
+            
+            updatePicture()
+            
+            noLabel.hidden = true
+            yesLabel.hidden = true
+            noArea.hidden = false
+            yesArea.hidden = false
         }
     }
     
     @IBAction func noAction(sender: AnyObject) {
         
+        feed[0]["no"].intValue += 1
         let no = feed[0]["no"].intValue
         let id = feed[0]["id"].intValue
         
-        print(no, id)
-        
-        Alamofire.request(.PUT, "http://ferrerluis.com/images", parameters: ["id": id, "no": no + 1])
+        Alamofire.request(.PUT, "http://ferrerluis.com/images", parameters: ["id": id, "no": no], encoding: .JSON)
             .responseJSON { (response) in
                 if let json = response.result.value {
                     
-                    print(JSON(json))
+                    print(true)
                 }
         }
         
-        noArea.hidden = true
-        yesArea.hidden = true
+        updateLabels()
     }
     
     @IBAction func yesAction(sender: AnyObject) {
         
+        feed[0]["yes"].intValue += 1
         let yes = feed[0]["yes"].intValue
         let id = feed[0]["id"].intValue
         
         print(yes, id)
         
-        Alamofire.request(.PUT, "http://ferrerluis.com/images", parameters: ["id": id,"yes": yes + 1])
+        Alamofire.request(.PUT, "http://ferrerluis.com/images", parameters: ["id": id, "yes": yes], encoding: .JSON)
             .responseJSON { (response) in
                 if let json = response.result.value {
                     
-                    print(JSON(json))
+                    print(true)
                 }
         }
         
-        noArea.hidden = true
-        yesArea.hidden = true
+        updateLabels()
     }
     
     func stylePage() {
@@ -106,10 +145,20 @@ class ViewController: UIViewController {
             image.image = UIImage(data: decodedData)
         }
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        noLabel.hidden = true
+        yesLabel.hidden = true
+        warning.hidden = true
+        
+        if feed.count == 0 {
+            
+            container.hidden = true
+            warning.hidden = false
+        }
         
         Alamofire.request(.GET, "http://ferrerluis.com/images")
             .responseJSON { (response) in
@@ -120,12 +169,14 @@ class ViewController: UIViewController {
                         feed.append(piece.1)
                     }
                     
+                    self.warning.hidden = true
+                    self.container.hidden = false
                     self.populate()
                 }
         }
         
         stylePage()
-
+//
     }
 
     override func didReceiveMemoryWarning() {
